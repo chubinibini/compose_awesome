@@ -57,7 +57,7 @@ FROM builder AS flask-env
 # 여러줄 명령 수행을 위해서 EOF 옵션 사용
 # 알파인 리눅스의 패키지 관리자 => apk
 # 더미 작업 예시
-RUN << EOF
+RUN <<EOF
 apk update
 apk add git
 EOF
